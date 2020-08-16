@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
-import { Button } from 'reactstrap';
+import { Button,Jumbotron } from 'reactstrap';
+import Slides from "./Slides";
 
 export default class Home extends Component {
     render() {
         return (
             <div>
-                <h1>หน้าหลัก</h1>
-                <p>ยินดีต้อนรับสู่เว็บไซต์</p>
-                 <Button> เข้าสู่ระบบ </Button>
+                <Slides/>
+                <Jumbotron>
+                ยินดีต้อนรับสู่เว็บไซต์ <br/>
+                <Button> เข้าสู่ระบบ </Button>
+                </Jumbotron>
+
             </div>
         )
     }
